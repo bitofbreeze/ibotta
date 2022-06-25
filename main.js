@@ -6,6 +6,7 @@ dotenv.config();
 
 const token = process.env.TOKEN;
 const userId = process.env.USER_ID;
+const retailerId = 42;
 
 const client = createClient({
   url: "https://content-server.ibotta.com/graphql/",
@@ -144,10 +145,10 @@ fragment BonusQualification_0 on BonusQualification {
 const main = async () => {
   const response = await client
     .query(AllOffers, {
-      offerCategoriesContainer_retailerId: 41,
+      offerCategoriesContainer_retailerId: retailerId,
       buyableGiftCards_limit: 9000,
       offerCategoriesContainer_limit: 2147483647,
-      buyableGiftCards_retailerId: 41,
+      buyableGiftCards_retailerId: retailerId,
       availableBonuses_limit: 1000,
     })
     .toPromise();
