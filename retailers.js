@@ -2,6 +2,12 @@ import { createClient } from "@urql/core";
 import "isomorphic-unfetch";
 import dotenv from "dotenv";
 dotenv.config();
+import path from "path";
+import { fileURLToPath } from "url";
+
+const nodePath = path.resolve(process.argv[1]);
+const modulePath = path.resolve(fileURLToPath(import.meta.url));
+const isRunningDirectlyViaCLI = nodePath === modulePath;
 
 const token = process.env.TOKEN;
 
@@ -1579,9 +1585,18 @@ const main = async () => {
     })
     .toPromise();
 
-  response.data.fetchRetailersByIds.map((retailer) => {
+  return response.data.fetchRetailersByIds;
+};
+
+const logResults = async () => {
+  const results = await main();
+  results.map((retailer) => {
     console.log(`* ${retailer.id} ${retailer.name}`);
   });
 };
 
-main();
+if (isRunningDirectlyViaCLI) {
+  logResults();
+}
+
+export default main;

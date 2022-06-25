@@ -3,10 +3,11 @@ import { createClient } from "@urql/core";
 import "isomorphic-unfetch";
 import dotenv from "dotenv";
 dotenv.config();
+import fetchRetailers from "./retailers.js";
 
 const token = process.env.TOKEN;
 const userId = process.env.USER_ID;
-const retailerId = 42;
+const retailerId = 48;
 
 const client = createClient({
   url: "https://content-server.ibotta.com/graphql/",
@@ -143,50 +144,63 @@ fragment BonusQualification_0 on BonusQualification {
 `;
 
 const main = async () => {
-  const response = await client
-    .query(AllOffers, {
-      offerCategoriesContainer_retailerId: retailerId,
-      buyableGiftCards_limit: 9000,
-      offerCategoriesContainer_limit: 2147483647,
-      buyableGiftCards_retailerId: retailerId,
-      availableBonuses_limit: 1000,
-    })
-    .toPromise();
-
-  const seen = new Set();
+  // const retailers = await fetchRetailers();
+  const retailers = [{ id: 11 }];
 
   await Promise.all(
-    response.data.offerCategoriesContainer.containers.map(async (container) => {
-      const content = [...container.content_ids];
-      const responses = [];
-      const intervalId = setInterval(async () => {
-        if (!content.length) {
-          clearInterval(intervalId);
-          return;
-        }
-        const offer = content.pop();
-        const offerId = offer.split(":")[1];
-        console.log(`Adding ${offerId}`);
-        if (!seen.has(offerId)) {
-          const activateResponse = await fetch(
-            `https://api.ibotta.com/v2/customers/${userId}/offers/${offerId}.json`,
-            {
-              body: JSON.stringify({
-                activated: true,
-              }),
-              method: "PUT",
-              headers: {
-                Authorization: token,
-                "Content-Type": "application/json",
-              },
-            }
-          );
-          responses.push(activateResponse);
-          console.log(activateResponse.status);
-          seen.add(offerId);
-        }
-      }, 300);
-      return await Promise.all(responses);
+    retailers.map(async ({ id }) => {
+      const response = await client
+        .query(AllOffers, {
+          offerCategoriesContainer_retailerId: retailerId,
+          buyableGiftCards_limit: 9000,
+          offerCategoriesContainer_limit: 2147483647,
+          buyableGiftCards_retailerId: retailerId,
+          availableBonuses_limit: 1000,
+        })
+        .toPromise();
+
+      const seen = new Set();
+
+      return await Promise.all(
+        response.data.offerCategoriesContainer.containers.map(
+          async (container) => {
+            const content = [...container.content_ids];
+            const responses = [];
+            const intervalId = setInterval(async () => {
+              if (!content.length) {
+                clearInterval(intervalId);
+                return;
+              }
+              const offer = content.pop();
+              const offerId = offer.split(":")[1];
+              console.log(`Adding ${offerId}`);
+              if (!seen.has(offerId)) {
+                try {
+                  const activateResponse = await fetch(
+                    `https://api.ibotta.com/v2/customers/${userId}/offers/${offerId}.json`,
+                    {
+                      body: JSON.stringify({
+                        activated: true,
+                      }),
+                      method: "PUT",
+                      headers: {
+                        Authorization: token,
+                        "Content-Type": "application/json",
+                      },
+                    }
+                  );
+                  responses.push(activateResponse);
+                  console.log(activateResponse.status);
+                  seen.add(offerId);
+                } catch (e) {
+                  console.log(`Failed adding ${offerId}`);
+                }
+              }
+            }, 1000);
+            return await Promise.all(responses);
+          }
+        )
+      );
     })
   );
 };
