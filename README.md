@@ -1,0 +1,212 @@
+# All retailers as of 25 June 2022
+
+- 1 King Soopers
+- 2 Safeway
+- 3 Target
+- 4 Walmart
+- 5 Walgreens
+- 6 Duane Reade
+- 7 Kroger
+- 8 Ralphs
+- 9 Publix
+- 10 CVS Pharmacy
+- 11 Vons
+- 12 Rite Aid
+- 13 Fred Meyer
+- 15 Smith's
+- 16 Fry's
+- 17 Pavilions
+- 18 Giant Eagle
+- 19 Meijer
+- 20 Tom Thumb
+- 21 Ingles
+- 23 Stop & Shop
+- 24 ShopRite
+- 25 H-E-B
+- 26 City Market
+- 27 Dillons
+- 28 7-Eleven
+- 29 Harris Teeter
+- 31 Randalls
+- 32 Any Military Commissary
+- 34 Dollar General
+- 35 Family Dollar
+- 36 Hannaford
+- 39 WinCo Foods
+- 41 Food4Less
+- 42 QFC
+- 43 Wegmans
+- 44 Rio Ranch
+- 46 Costco
+- 47 Sam's Club
+- 48 Whole Foods Market
+- 49 Food Lion
+- 51 Ridley's
+- 53 Redner's Markets
+- 54 Weis Markets
+- 55 Buehler's
+- 56 Remke Markets
+- 58 Martin's (IN, MI)
+- 62 Reasor's
+- 63 Acme Fresh Market (OH)
+- 64 Baker's
+- 65 Gerbes
+- 66 Jay C
+- 67 Owen's Market
+- 68 Pay Less
+- 69 Ruler Foods
+- 71 Foods Co
+- 72 Homeland
+- 73 Country Mart (Lawton, OK)
+- 74 Boyer's
+- 95 Lowes Foods
+- 103 Shoppers Food
+- 107 JustSave Foods
+- 110 Big Y Foods
+- 117 Fareway Food Stores
+- 133 Giant (DC,DE,VA,MD)
+- 134 GIANT (PA,WV,MD,VA)
+- 193 BJ's
+- 204 Natural Grocers
+- 212 Albertsons
+- 213 ACME
+- 214 Jewel-Osco
+- 215 Shaw's
+- 216 Star Market
+- 217 Copps
+- 218 Mariano's
+- 219 Metro Market
+- 250 United Supermarkets
+- 251 Market Street
+- 258 Circle K
+- 261 Amigos
+- 264 The Food Emporium
+- 268 SuperFresh
+- 270 Casey's
+- 277 QuikTrip
+- 278 Speedway
+- 281 Raley's
+- 282 Bel Air
+- 283 Nob Hill Foods
+- 287 Smart & Final
+- 307 Cub Foods
+- 309 Hornbacher's
+- 316 Stater Bros
+- 318 Wawa
+- 319 Kmart
+- 322 Lunds & Byerlys
+- 323 Haggen Northwest Fresh
+- 324 Tops
+- 325 Schnucks
+- 327 Bashas'
+- 328 Dollar Tree
+- 332 The Fresh Market
+- 334 Trader Joe's
+- 335 Aldi
+- 340 Albertsons Market
+- 341 Price Cutter
+- 346 Northgate Markets
+- 349 County Market
+- 355 Food City
+- 377 SHOP 'n SAVE
+- 389 Rouses
+- 395 Market 32
+- 396 Market Bistro
+- 397 Dierbergs
+- 408 FoodMaxx
+- 418 Macey's
+- 419 Dan's Fresh Market
+- 420 Dick's Fresh Market
+- 421 Lin's Fresh Market
+- 422 Fresh Market
+- 423 Blair's Market
+- 424 Broulim's Fresh Foods
+- 425 Peterson's Fresh Market
+- 426 Soelberg's Market
+- 427 Stewart's Marketplace
+- 428 Bowman's Market
+- 429 Davis Food and Drug
+- 430 Stokes Market
+- 433 Marc's
+- 434 PriceRite
+- 443 Maverik
+- 453 Sheetz
+- 455 Kwik Trip/Kwik Star
+- 457 Shell
+- 473 Stewart's Shops
+- 476 Love's
+- 482 Crest Foods
+- 483 D&W Fresh Market
+- 484 Family Fare Supermarkets
+- 485 VG's Grocery
+- 486 Family Fresh Market
+- 487 Forest Hills Foods
+- 533 Hucks
+- 570 Grant's Supermarket
+- 571 Berkot's Super Foods
+- 572 Discount Drug Mart
+- 574 Market District
+- 575 getGo
+- 623 Harding's
+- 627 Super One Foods
+- 655 Brookshire Brothers
+- 669 Hugo's Family Marketplace
+- 671 Food Giant
+- 673 The Mad Butcher
+- 675 Sureway
+- 698 Gelson's
+- 700 Kamas Foodtown
+- 702 Grove City County Market
+- 737 Festival Foods
+- 738 Kent's Market
+- 741 Fishers Foods
+- 745 Fairplay Foods
+- 784 Clinton Market
+- 795 Save A Lot
+- 798 Lee's Marketplace
+- 799 Russ's Market
+- 800 Super Saver
+- 801 Grand Central Apple Market
+- 807 ValuCheck
+- 808 Harvest Market
+- 869 Fresco y Más
+- 870 Harveys
+- 915 Lowe's Market
+- 917 Food King
+- 921 Missoula Fresh Market
+- 954 Foodtown
+- 955 Freshtown Marketplace
+- 957 La Bella Marketplace
+- 958 FreshCo Supermarkets
+- 959 Brooklyn Harvest Market
+- 960 Market Fresh
+- 961 Big Deal Food Market
+- 964 Kinney Drugs
+- 965 BI-LO
+- 966 Winn-Dixie
+- 970 Shop N Bag
+- 1007 Coborn's
+- 1034 Cash Wise
+- 1046 Sprouts Farmers Market
+- 1058 BestBuy.com
+- 1144 Amazon
+- 1300 Hays Supermarket
+- 1303 C&R Markets
+- 1304 Strack & Van Til Food Market
+- 1305 Riesbeck's Food Markets
+- 1307 Woodman's Food Markets
+- 1336 Tadych’s Foods Marketplace
+- 1342 Key Food
+- 1343 C-Town Supermarkets
+- 1344 Bravo
+- 1345 Kings Food Markets
+- 1351 Harps Food Stores
+- 1352 Fresh Thyme
+- 1353 Busch's Fresh Food Market
+- 1369 Bartell Drugs
+- 1404 Carlie C's IGA
+- 1408 Walmart Online
+- 1433 Target Online
+- 2306 H-E-B Online
+- 4778 Sam's Club
+- 4806 Allen's Grocery
